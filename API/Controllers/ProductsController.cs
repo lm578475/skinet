@@ -18,6 +18,7 @@ public class ProductsController : ControllerBase  //API json responses, but not 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Product>>> GetProducts(){
 
+       //testing git
         return await context.Products.ToListAsync();
 
     }
